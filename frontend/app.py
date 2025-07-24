@@ -1,5 +1,8 @@
-import streamlit as st
+import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+import streamlit as st
 import shutil
 from backend.video_utils import extract_frames, create_video_from_frames
 from backend.prompt_utils import generate_captions_for_all_frames, rewrite_all_captions
